@@ -1,7 +1,13 @@
 aid: kartable
 name: Kartable
-description: 'Kartable is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Kartable is a French online education platform (edtech) delivering standards-aligned
+  learning for students from primary through secondary school (CE1 to Terminale, ages 6-18).
+  It provides more than 1,000 course summaries, thousands of corrected exercises, and quizzes
+  across 16 subjects including mathematics, French, history, physics, and languages, authored
+  by teachers from the French Education Ministry. Its "Alfa" AI tutor answers questions 24/7,
+  generates custom quizzes from photos of coursework, and guides students through homework,
+  while parents follow progress from a dedicated dashboard. Kartable is a consumer subscription
+  product (from EUR 7.99/month) and does not publish a public developer API. Backed by Partech.'
 url: https://raw.githubusercontent.com/api-evangelist/kartable/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +15,30 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.kartable.com/web/android-icon-192x192.png
 tags:
 - Company
 - Consumer
+- Education
+- EdTech
+- E-Learning
+- Artificial Intelligence
+- France
+- Students
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +48,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.kartable.com/
+- type: Pricing
+  url: https://www.kartable.com/subscribe/plans
+- type: TermsOfService
+  url: https://www.kartable.com/legal
+- type: Login
+  url: https://www.kartable.com/login
+- type: Support
+  url: mailto:support@kartable.com
+- type: DomainSecurity
+  url: security/kartable-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
